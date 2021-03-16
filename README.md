@@ -17,7 +17,8 @@
 1. [https://zhuanlan.zhihu.com/p/99198980](https://zhuanlan.zhihu.com/p/99198980)
 2. [https://www.jianshu.com/p/e642856f6044](https://www.jianshu.com/p/e642856f6044)
 ### 此插件使用方式:
-安装依赖: npm install -g vsce
-打包: vsce package
-离线安装: 
-    ![image.png](https://cdn.nlark.com/yuque/0/2021/png/2373519/1615863147275-8500c6b3-79db-4a4e-8d90-064f109fb26e.png#align=left&display=inline&height=299&margin=%5Bobject%20Object%5D&name=image.png&originHeight=299&originWidth=269&size=12308&status=done&style=none&width=269)
+1. 安装依赖: npm install -g vsce
+2. 打包: vsce package
+3. 离线安装: 
+
+![image.png](https://cdn.nlark.com/yuque/0/2021/png/2373519/1615863147275-8500c6b3-79db-4a4e-8d90-064f109fb26e.png#align=left&display=inline&height=299&margin=%5Bobject%20Object%5D&name=image.png&originHeight=299&originWidth=269&size=12308&status=done&style=none&width=269)
