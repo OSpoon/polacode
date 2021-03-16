@@ -14,8 +14,9 @@
 ![image.png](https://cdn.nlark.com/yuque/0/2021/png/2373519/1615862750994-92491c80-d87b-44e1-a09d-2921e6a1e1f0.png#align=left&display=inline&height=530&margin=%5Bobject%20Object%5D&name=image.png&originHeight=530&originWidth=1024&size=142603&status=done&style=none&width=1024)
 ![image.png](https://cdn.nlark.com/yuque/0/2021/png/2373519/1615862784552-f4b837e5-0c92-4acc-86f6-f16ce7ff78d1.png#align=left&display=inline&height=571&margin=%5Bobject%20Object%5D&name=image.png&originHeight=571&originWidth=1477&size=98193&status=done&style=none&width=1477)
 ### VSCode插件开发: 
-[https://zhuanlan.zhihu.com/p/99198980](https://zhuanlan.zhihu.com/p/99198980)
-[https://www.jianshu.com/p/e642856f6044](https://www.jianshu.com/p/e642856f6044)
+1. [https://zhuanlan.zhihu.com/p/99198980](https://zhuanlan.zhihu.com/p/99198980)
+2. [https://www.jianshu.com/p/e642856f6044](https://www.jianshu.com/p/e642856f6044)
+3. [https://liiked.github.io/VS-Code-Extension-Doc-ZH/#/](https://liiked.github.io/VS-Code-Extension-Doc-ZH/#/)
 ### 此插件使用方式:
 安装依赖: npm install -g vsce
 打包: vsce package

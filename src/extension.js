@@ -1,24 +1,28 @@
+// 导入相关依赖
 const vscode = require("vscode")
 const path = require("path")
 const { writeFileSync } = require("fs")
 const { homedir } = require("os")
 
+const P_TITLE = 'Polacode 📸'
+
+// 构建存放图片的路径
 let filename = new Date().getTime()
 let lastUsedImageUri = vscode.Uri.file(path.resolve(homedir(), "Desktop/" + filename + ".png"))
 
 let shouldCopyEverything = false
 
+// 将序列化的Blob对象转存为File
 const writeSerializedBlobToFile = (serializeBlob, fileName) => {
   const bytes = new Uint8Array(serializeBlob.split(","))
   writeFileSync(fileName, Buffer.from(bytes))
 }
 
-const P_TITLE = 'Polacode 📸'
-
+// 激活功能
 function activate(context) {
   let panel
-
   const panelHandlers = () =>
+    // 接收到消息处理函数
     panel.webview.onDidReceiveMessage(
       message => {
         switch (message.command) {
@@ -32,6 +36,7 @@ function activate(context) {
               })
               .then(uri => {
                 if (uri) {
+                  // 输出图片文件
                   writeSerializedBlobToFile(message.data, uri.fsPath)
                   lastUsedImageUri = uri
                 }
@@ -51,13 +56,16 @@ function activate(context) {
       context.subscriptions
     )
 
+  // 注册命令与package.json中对应
   vscode.commands.registerCommand("polacode.activate", () => {
     shouldCopyEverything = true
+    // 创建webview面板
     panel = vscode.window.createWebviewPanel("polaCode", P_TITLE, vscode.ViewColumn.Two, {
       enableScripts: true,
       localResourceRoots: [vscode.Uri.file(path.join(context.extensionPath, "webview"))],
     })
 
+    // 注册消费者
     panelHandlers()
 
     const dom2imageJSPath = vscode.Uri.file(path.join(context.extensionPath, "webview", "dom2image.js"))
