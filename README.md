@@ -16,7 +16,6 @@
 ### VSCode插件开发: 
 1. [https://zhuanlan.zhihu.com/p/99198980](https://zhuanlan.zhihu.com/p/99198980)
 2. [https://www.jianshu.com/p/e642856f6044](https://www.jianshu.com/p/e642856f6044)
-3. [https://liiked.github.io/VS-Code-Extension-Doc-ZH/#/](https://liiked.github.io/VS-Code-Extension-Doc-ZH/#/)
 ### 此插件使用方式:
 安装依赖: npm install -g vsce
 打包: vsce package
