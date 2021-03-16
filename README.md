@@ -1,69 +1,20 @@
-# changelog
-1. 调整页面样式
-2. 增加菜单显
-# FORK - CHANGES:
+# polacode-ospoon
+> 本项目修改自VSCode商店的同款其他项目,目的是想换成自己习惯的打开方式。
 
-Fixed for the new VS Code update
+### 功能:
+与其他同款插件功能一致,方便程序员生成代码截图用于保存,分享等。
+### 调整内容:
 
-# Polacode
+1. 修改快捷命令为: Code2Image
+1. 增加在打开的页签右边Menu上
 
-Polaroid for your code 📸.
-
-[MarketPlace Page](https://marketplace.visualstudio.com/items?itemName=jeff-hykin.polacode)
-
-![usage](https://github.com/octref/polacode/raw/master/demo/usage.gif)
-
-By [Pine](https://github.com/octref) & [Peng](https://github.com/rebornix) from VS Code team.
-Happy Coding!
-
-## Why?
-
-You have spent countless hours finding the perfect [JavaScript grammar](https://marketplace.visualstudio.com/search?term=javascript%20grammar&target=VSCode&category=All%20categories&sortBy=Relevance), matching it with a [sleek-looking VS Code theme](https://marketplace.visualstudio.com/search?target=VSCode&category=Themes&sortBy=Downloads), trying out all the [best programming fonts](https://www.slant.co/topics/67/~best-programming-fonts).
-
-You take three days porting over [your theme](https://github.com/wesbos/cobalt2-vscode) before starting to use VS Code.
-You shell out $200 for [italic cursive html attributes](https://www.typography.com/blog/introducing-operator).
-
-The code has to look right.
-
-## Seriously, why not just take a screenshot?
-
-- I like and care about the shadow, padding & rounded corner of macOS's screenshot. I want an easy way to have those nice visuals for any selection of my snippet.
-- I want to hide errors, warnings, color decorators, folding markers, line numbers, scrollbar and minimap.
-- It generates something decent on Windows & Linux.
-
-## Demo
-
-[Nord](https://github.com/arcticicestudio/nord-visual-studio-code) + [Input Mono](http://input.fontbureau.com)
-
-![demo1](https://raw.githubusercontent.com/octref/polacode/master/demo/1.png)
-
-[Monokai Pro](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode) + [Operator Mono](https://www.typography.com/blog/introducing-operator)
-
-![demo2](https://raw.githubusercontent.com/octref/polacode/master/demo/2.png)
-
-[Material Theme Palenight](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme) + [Fira Code](https://github.com/tonsky/FiraCode)
-
-![demo3](https://raw.githubusercontent.com/octref/polacode/master/demo/3.png)
-
-## Tip
-
-- When running out of horizontal space, try the command `View: Toggle Editor Group Vertical/Horizontal Layout`.
-
-## Credit
-
-Thanks to [@tsayen](https://github.com/tsayen) for making [dom-to-image](https://github.com/tsayen/dom-to-image), which Polacode is using for generating the images.
-
-Thanks to [Dawn Labs](https://dawnlabs.io) for making [Carbon](https://carbon.now.sh) that inspired Polacode.
-
-Many color are taken from the elegant [Nord](https://github.com/arcticicestudio/nord) theme by [@arcticicestudio](https://github.com/arcticicestudio).
-
-Download button animation is made with [Vivus](https://github.com/maxwellito/vivus).
-
-## Contribution
-
-Contribution is extremely unwelcome.
-Please open an issue first so I can stop you from complicating the UX.
-
-## License
-
-MIT
+![image.png](https://cdn.nlark.com/yuque/0/2021/png/2373519/1615862750994-92491c80-d87b-44e1-a09d-2921e6a1e1f0.png#align=left&display=inline&height=530&margin=%5Bobject%20Object%5D&name=image.png&originHeight=530&originWidth=1024&size=142603&status=done&style=none&width=1024)
+![image.png](https://cdn.nlark.com/yuque/0/2021/png/2373519/1615862784552-f4b837e5-0c92-4acc-86f6-f16ce7ff78d1.png#align=left&display=inline&height=571&margin=%5Bobject%20Object%5D&name=image.png&originHeight=571&originWidth=1477&size=98193&status=done&style=none&width=1477)
+### VSCode插件开发: 
+[https://zhuanlan.zhihu.com/p/99198980](https://zhuanlan.zhihu.com/p/99198980)
+[https://www.jianshu.com/p/e642856f6044](https://www.jianshu.com/p/e642856f6044)
+### 此插件使用方式:
+安装依赖: npm install -g vsce
+打包: vsce package
+离线安装: 
+    ![image.png](https://cdn.nlark.com/yuque/0/2021/png/2373519/1615863147275-8500c6b3-79db-4a4e-8d90-064f109fb26e.png#align=left&display=inline&height=299&margin=%5Bobject%20Object%5D&name=image.png&originHeight=299&originWidth=269&size=12308&status=done&style=none&width=269)
